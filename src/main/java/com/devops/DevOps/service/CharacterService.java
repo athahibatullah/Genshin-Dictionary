@@ -26,4 +26,8 @@ public class CharacterService {
     public List<Character> getAllCharacter(){
         return repository.findAll();
     }
+
+    public Character AddCharacter(Character character){
+        return repository.save(character);
+    }
 }

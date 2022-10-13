@@ -27,4 +27,9 @@ public class CharacterController {
         return service.getCharacterByName(name);
     }
 
+    @PostMapping("/character/add")
+    public Character AddCharacter(@RequestBody Character character){
+        return service.AddCharacter(character);
+    }
+
 }
